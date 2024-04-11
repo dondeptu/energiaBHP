@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0px 40px;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        row-gap: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        row-gap: 50px;
+    }
+
+}
+
+.container__mainHeader {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+    .container__mainHeader {
+        font-size: 30px;
+    }
+}

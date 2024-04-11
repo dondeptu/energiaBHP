@@ -1,0 +1,4 @@
+.footer__icons {
+    display: flex;
+    column-gap: 12px;
+}
