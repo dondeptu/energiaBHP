@@ -9,7 +9,12 @@ html {
 .container {
     font-family: 'Titillium Web', sans-serif;
     margin: 0px 40px;
-    background-image: url("images/background.jpg");
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.1), 
+            rgba(0, 0, 0, 0.1)
+            ), 
+        url("images/background.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
