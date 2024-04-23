@@ -87,8 +87,9 @@
 .carousel__button {
     flex-shrink: 0;
     flex-grow: 0;
-    max-width: 30px;
-    max-height: 30px;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1.5px solid #1e8b57ff;
     color: #1e8b57ff;
@@ -96,6 +97,7 @@
     font-weight: 600;
     background-color: #fff;
 }
+
 
 .carousel__button:active {
     background-color: #d8f3e6;
