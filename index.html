@@ -1,33 +1,194 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnergiaBHP</title>
+    <!-- TO DO: page icon and fb sharing -->
+    <!-- <link rel="icon" href="images/logo.png">
+    <meta property="og:image" content="images/share.png?1"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="footer.css">
-</head>
-<body class="container">
-    <h1 class="container__mainHeader">Wkrótce uruchomimy naszą stronę internetową.</h1>
-    <img src="images/Energia.svg" alt="logo energia bhp"/>
+    <script defer src="script.js"></script>
 
-    <footer class="footer__icons">
-        <div>
-            <a rel="noreferrer noopener" target="_blank"
-                href="https://www.facebook.com/profile.php?id=61555799191875">
-                <img src="images/icons/icons8-facebook-50.png" alt="Facebook" />
-            </a>
-        </div>
-        <div>
-            <a href="mailto:dotacje@energiabhp.pl">
-                <img src="images/icons/icons8-mail-50.png" alt="e-mail" />
-            </a>
-        </div>
-    </footer>
+</head>
+
+<body>
+    <div class="flex">
+        <nav class="nav">
+            <header class="nav__header">
+                                <i class="bx bx-menu" id="menu-toggle"></i>
+                <img src="images/Energia.svg" alt="logo Energia BHP" class="nav__logo">
+                <section class="nav__menuNavigation">
+                    <ul class="nav__navigation">
+                        <li>Home</li>
+                        <li>Oferta</li>
+                        <li>Kontakt</li>
+                    </ul>
+                </section>
+            </header>
+            <section class="nav__slidingNavigation" id="menu">
+                <h2 class="nav__menuHeader">Menu</h2>
+                <ul class="nav__navigationList" id="menu">
+                    <li class="nav__listItem">Home</li>
+                    <li class="nav__listItem">Dofinansowania z ZUS i KFS</li>
+                    <li class="nav__listItem">Dotacje UE</li>
+                    <li class="nav__listItem">Wsparcie firm przez specjalne strefy ekonomiczne</li>
+                    <li class="nav__listItem">Usługi BHP</li>
+                    <li class="nav__listItem">Usługi Przeciwpożarowe PPOŻ</li>
+                    <li class="nav__listItem">Uprawnienia URE/SEP UDT i inne</li>
+                    <li class="nav__listItem">Badania środowiska pracy</li>
+                    <li class="nav__listItem">Kontakt</li>
+                </ul>
+            </section>
+        </nav>
+        <main class="main">
+            <header class="main__headerContainer">
+                <section class="main__information">
+                    <strong>Strona w budowie.<br> Przepraszamy za utrudnienia.</strong>
+                </section>
+                <h1 class="main__header"> Naszym celem jest zapewnienie bezpieczeństwa<br> i profesjonalizmu w <b
+                        class="main__marked">miejscu pracy</b>.</h1>
+                <p class="main__paragraph">Dlatego angażujemy
+                    się w wsparcie pracodawców, pomagając im w codziennych wyzwaniach związanych z zapewnieniem
+                    optymalnych
+                    warunków pracy dla pracowników.
+                </p>
+            </header>
+
+            <section class="main__section">
+                <h2 class="main__sectionHeader">Oferujemy:</h2>
+                <ul class="main__list">
+                    <li class="main__listItem">
+                        <div>
+                            <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                class="main__listStyleType">
+                        </div>
+                        <div>Wszechstronne szkolenia,</div>
+                    </li>
+                    <li class="main__listItem">
+                        <div><img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                class="main__listStyleType"></div>
+                        <div>systematycze kontrole,</div>
+                    </li>
+                    <li class="main__listItem">
+                        <div><img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                class="main__listStyleType"></div>
+                        <div>aktywne poszukiwanie możliwości uzyskania dofinansowania na wdrożenie nowych
+                            technologii,</div>
+                    </li>
+                    <li class="main__listItem">
+                        <div><img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                class="main__listStyleType"></div>
+                        <div>doskonalenie kompetencji kadry pracowniczej.</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="carousel">
+                <button id="prev-button" class="carousel__button">&lt</button>
+                <div id="carousel-items" class="carousel__container">
+                    <div class="carousel__item" id="carousel-first">
+                        <h2 class="carousel__itemHeader">Dofinansowania z ZUS i KFS</h2>
+                        <p>Pomagamy w pozyskaniu dofinansowania przyznawanego przez Zakład Ubezpieczeń Społecznych (ZUS)
+                            oraz przez Krajowy Fundusz Szkoleniowy (KFS).
+                        </p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Dotacje UE</h2>
+                        <p>Dotacje unijne dla przedsiębiorstw są dobrą opcją dla firm, które chcą zwiększyć swoją
+                            konkurencyjność, rozwijać swoją działalność i inwestować w nowoczesne technologie.
+                        </p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Specjalne strefy ekonomiczne</h2>
+                        <p>Oferujemy wsparcie w zakresie pozyskiwania środków publicznych w postaci zwolnień podatkowych
+                            w ramach Specjalnych Stref Ekonomicznych.
+                        </p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Usługi BHP</h2>
+                        <p>Oferujemy kompleksowe usługi BHP, między innymi: szkolenia wstępne i okresowe bhp dla
+                            wszystkich grup pracowniczych oraz pracodawców.</p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Usługi Przeciwpożarowe PPOŻ</h2>
+                        <p>Szkolenia z zakresu ochrony przeciwpożarowej kierowane dla Pracowników oraz Pracodawców.
+                            Analiza bezpieczeństwa pożarowego, kontrola warunków ochrony p.poż, sporządzenie i
+                            aktualizacja instrukcji bezpieczeństwa pożarowego i więcej.</p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Uprawnienia URE/SEP UDT i inne</h2>
+                        <p>Prowadzimy szkolenia zawodowe służące uzyskaniu uprawnień do obsługi wybranego sprzętu. Po
+                            szkoleniach do obsługi urządzeń objętych dozorem UDT załatwiamy formalności związane z
+                            organizacją egzaminu państwowego.</p>
+                    </div>
+                    <div class="carousel__item">
+                        <h2 class="carousel__itemHeader">Badania środowiska pracy</h2>
+                        <p>Oferujemy akredytowane badania i pomiary m.in. w zakresie: badania hałasu w środowisku pracy,
+                            pobrania próbek powietrza w celu oceny narażenia zawodowego na pyły przemysłowe, badania
+                            stężenia pyłów i więcej.
+                        </p>
+                    </div>
+                </div>
+                <button id="next-button" class="carousel__button">&gt</button>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <section>
+                <article class="footer__article">
+                    <h3 class="footer__header">Kontakt</h3>
+                    <div class="footer__icons">
+                        <div>
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://www.facebook.com/profile.php?id=61555799191875">
+                                <img src="images/icons/icons8-facebook-50.png" alt="Facebook"
+                                    class="footer__iconImage" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:dotacje@energiabhp.pl">
+                                <img src="images/icons/icons8-mail-50.png" alt="e-mail" class="footer__iconImage" />
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="footer__article footer__article--light">
+                    <div>
+                        <h3 class="footer__header footer__header--light">Godziny</h3>
+                        <p class="footer__paragraph">pon. - pt.</p>
+                        <p class="footer__paragraph">8:00 - 16:00</p>
+                    </div>
+                    <div class="footer__contactContainer">
+                        <p class="footer__paragraph">
+                            <a href="tel: +48.697(333)390" class="footer__link">
+                                +48 697 333 390
+                            </a>
+                        </p>
+                        <p class="footer__paragraph">
+                            <a href="mailto:dotacje@energiabhp.pl" class="footer__link">dotacje@energiabhp.pl</a>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="footer__licenseBar">
+                Icons by <a rel="noreferrer noopener" target="_blank" href="https://icons8.com/"
+                    class="footer__licenseLink">Icons8</a>
+            </section>
+        </footer>
+    </div>
 </body>
+
 </html>
