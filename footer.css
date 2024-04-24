@@ -16,6 +16,12 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .footer__header {
+        font-size: 21px;
+    }
+}
+
 .footer__header--light {
     color: #000;
     text-align: left;
@@ -44,12 +50,27 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .footer__article {
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+}
+
 .footer__article--light {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);
+}
 
+@media (min-width: 1800px) {
+    .footer__article--light {
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
 }
 
 .footer__contactContainer {
@@ -64,6 +85,13 @@
     align-items: center;
     justify-content: center;
     column-gap: 15px;
+}
+
+@media (min-width: 1800px) {
+    .footer__icons {
+        column-gap: 18px;
+        margin-top: 25px;
+    }
 }
 
 .footer__iconImage {
@@ -83,8 +111,12 @@
     color: #1e8b57ff;
 }
 
-.footer__link:active {
+.footer__link:hover {
     text-decoration: underline;
+}
+
+.footer__link:active {
+    color: #00d36e;
 }
 
 .footer__licenseBar {

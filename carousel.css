@@ -26,6 +26,14 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .carousel {
+        margin: 120px 300px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .carousel__container {
     display: flex;
     column-gap: 48px;
@@ -80,6 +88,13 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .carousel__item {
+        padding: 10px 50px;
+        line-height: 1.7;
+    }
+}
+
 .carousel__itemHeader {
     font-size: 19px;
 }
@@ -97,7 +112,6 @@
     font-weight: 600;
     background-color: #fff;
 }
-
 
 .carousel__button:active {
     background-color: #d8f3e6;
