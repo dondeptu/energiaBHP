@@ -46,7 +46,7 @@
 .nav__slidingNavigation {
     position: fixed;
     left: 0%;
-    top: -100%;
+    top: -120%;
     right: 0%;
     bottom: auto;
     z-index: 1;
@@ -58,19 +58,18 @@
 
 @media (min-width: 768px) {
     .nav__slidingNavigation {
-        visibility: hidden;
+        display: none;
     }
 }
 
 .nav__navigation {
     list-style-type: none;
-    display: flex;
-    visibility: hidden;
+    display: none;
 }
 
 @media (min-width: 768px) {
     .nav__navigation {
-        visibility: visible;
+        display: flex;
         padding-left: 15px;
         padding-right: 5px;
         margin-left: 20px;
