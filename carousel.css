@@ -86,11 +86,8 @@
 
 .carousel__button {
     aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    /* flex-shrink: 0;
-    flex-grow: 0;
-    justify-content: center; */
+    padding: 0px;
+    flex-shrink: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
