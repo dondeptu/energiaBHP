@@ -1,6 +1,6 @@
 .main {
     flex-grow: 1;
-    margin-top: 58px;
+    margin-top: 44px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
@@ -334,4 +334,13 @@
 
 .main__toggleVisible {
     display: contents;
+}
+
+.main__logoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.main__logo {
+    max-width: 230px;
 }
