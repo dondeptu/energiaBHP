@@ -41,6 +41,8 @@
 
 @media (min-width: 1200px) {
     .main__headerContainer {
+        display: flex;
+        align-items: center;
         background-image: linear-gradient(90deg, #fff 0%, #d8f3e6 100%);
         padding-bottom: 30px;
         padding-left: 60px;
@@ -69,15 +71,21 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .main__header {
-        max-width: 60%;
-    }
-}
 
 @media (min-width: 1800px) {
     .main__header {
         font-size: 30px;
+    }
+}
+
+.main__logo {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .main__logo {
+        display: block;
+        margin: 0px 100px
     }
 }
 
@@ -99,7 +107,7 @@
 
 @media (min-width: 1200px) {
     .main__paragraph {
-        max-width: 50%;
+        max-width: 80%;
     }
 }
 
