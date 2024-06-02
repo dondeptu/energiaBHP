@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergiaBHP</title>
+    <!-- TO DO: page icon and fb sharing -->
+    <!-- <link rel="icon" href="images/logo.png">
+    <meta property="og:image" content="images/share.png?1"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/carousel.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <script defer src="static/script.js"></script>
+    <script defer src="static/subpage.js"></script>
+
+</head>
+
+<body>
+    <div class="flex">
+        <nav class="nav">
+            <header class="nav__header">
+                <i class="bx bx-menu" id="menu-toggle"></i>
+                <img src="images/Energia.svg" alt="logo Energia BHP" class="nav__logo">
+                <section class="nav__menuNavigation">
+                    <ul class="nav__navigation">
+                        <li class="nav__navigationListItem"><a href="index.html" class="nav__navigationLink">Home</a>
+                        </li>
+                        <li class="nav__navigationListItem"><a href="#" class="nav__navigationLink">Oferta</a>
+                            <ul class="nav__navigationDropdown">
+                                <li class="nav__navigationDropdownItem"><a href="dofinansowania_z_zus_i_kfs.html"
+                                        class="nav__navigationDropdownLink">Dofinansowania z ZUS i KFS</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="dotacje_ue.html"
+                                        class="nav__navigationDropdownLink">Dotacje UE</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="strefy_ekonomiczne.html"
+                                        class="nav__navigationDropdownLink">Wsparcie firm przez specjalne strefy
+                                        ekonomiczne</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="uslugi_bhp.html"
+                                        class="nav__navigationDropdownLink">Usługi BHP</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="ppoz.html"
+                                        class="nav__navigationDropdownLink">Usługi Przeciwpożarowe PPOŻ</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="uprawnienia.html"
+                                        class="nav__navigationDropdownLink">Uprawnienia URE/SEP UDT i inne</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="badania_srodowiska_pracy.html"
+                                        class="nav__navigationDropdownLink">Badania środowiska pracy</a></li>
+                                <li class="nav__navigationDropdownItem"><a href="biuro_zamowien_publicznych.html"
+                                        class="nav__navigationDropdownLink">Biuro zamówień publicznych</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__navigationListItem"><a href="contact.html"
+                                class="nav__navigationLink">Kontakt</a>
+                        </li>
+                    </ul>
+                </section>
+            </header>
+            <section class="nav__slidingNavigation" id="menu">
+                <h2 class="nav__menuHeader">Menu</h2>
+                <ul class="nav__navigationList" id="menu">
+                    <li class="nav__listItem js-navLink"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__listItem js-navLink"><a href="dofinansowania_z_zus_i_kfs.html"
+                            class="nav__link">Dofinansowania
+                            z ZUS i KFS</a></li>
+                    <li class="nav__listItem js-navLink"><a href="dotacje_ue.html" class="nav__link">Dotacje UE</a></li>
+                    <li class="nav__listItem js-navLink"><a href="strefy_ekonomiczne.html" class="nav__link">Wsparcie
+                            firm przez
+                            specjalne strefy
+                            ekonomiczne</a></li>
+                    <li class="nav__listItem js-navLink"><a href="uslugi_bhp.html" class="nav__link">Usługi BHP</a></li>
+                    <li class="nav__listItem js-navLink"><a href="ppoz.html" class="nav__link">Usługi Przeciwpożarowe
+                            PPOŻ</a></li>
+                    <li class="nav__listItem js-navLink"><a href="uprawnienia.html" class="nav__link">Uprawnienia
+                            URE/SEP UDT i
+                            inne</a></li>
+                    <li class="nav__listItem js-navLink"><a href="badania_srodowiska_pracy.html"
+                            class="nav__link">Badania
+                            środowiska pracy</a></li>
+                    <li class="nav__listItem js-navLink"><a href="biuro_zamowien_publicznych.html"
+                            class="nav__link">Biuro zamówień publicznych</a></li>
+                    <li class="nav__listItem js-navLink"><a href="contact.html" class="nav__link">Kontakt</a></li>
+                </ul>
+            </section>
+        </nav>
+        <main class="main">
+            <section class="main__section">
+                <article>
+                    <h2 class="main__subPageSectionHeader">Badania środowiska pracy</h2>
+                    <p class="main__subPageParagraph">
+                        Oferujemy akredytowane badania i pomiary w zakresie:
+                    <ul class="main__list">
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badanie hałasu w środowisku pracy;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pobieranie próbek powietrza w celu oceny narażenia zawodowego na pyły przemysłowe;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badanie stężenia pyłów;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pobieranie próbek powietrza w celu oceny narażenia zawodowego na substancje organiczne i
+                                nieorganiczne;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pobieranie próbek powietrza w celu oceny narażenia zawodowego na metale i ich związki;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badanie stężenia tlenku węgla;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary drgań mechanicznych działających na organizm człowieka przez kończyny górne;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary drgań mechanicznych o ogólnym działaniu na organizm człowieka;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary natężenia i równomierności oświetlenia elektrycznego na stanowiskach pracy, w
+                                pomieszczeniach;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary oświetlenia awaryjnego;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary mikroklimatu umiarkowanego, zimnego i gorącego;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                pomiary wydatku energetycznego metodą wentylacji płuc.
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="main__subPageParagraph">
+                    <h3 class="main__sectionHeader">Dodatkowo oferujemy:</h3>
+                    <ul class="main__list">
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badanie hałasu w środowisku ogólnym (tzw. hałas przemysłowy od instalacji i urządzeń);
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badanie stężeń substancji chemicznych, metali, gazów;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badania pól elektromagnetycznych;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                badania skuteczności wentylacji: grawitacyjnej, mechanicznej (nawiewnej, wywiewnej);
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+                    <p class="main__subPageParagraph">
+                    <h3 class="main__sectionHeader">Gwarantujemy:</h3>
+                    <ul class="main__list">
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                opracowanie dokumentacji po wykonanych pomiarach (karty i rejestry czynników
+                                szkodliwych);
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                aktualizacja oceny ryzyka zawodowego po wykonanych pomiarach;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                wykonanie pomiarów i dobór ochronników słuchu;
+                            </div>
+                        </li>
+                        <li class="main__listItem">
+                            <div>
+                                <img src="images/icons/icons8-check-48.png" alt="ikona odchaczonego zadania"
+                                    class="main__listStyleType">
+                            </div>
+                            <div>
+                                wykonanie pomiarów elektrycznych;
+                            </div>
+                        </li>
+                    </ul>
+                    </p>
+                </article>
+                <article class="main__article">
+                    <div>
+                        <button id="subPageButton" class="main__subPageButton">Odzież BHP</button>
+                    </div>
+                </article>
+                <article class="main__toggleHidden" id="article">
+                    <div class="main__article">
+                        <h3 class="main__sectionHeader">Odzież BHP</h3>
+                        <p class="main__subPageParagraph">
+                            Oferujemy wynajem (dzierżawa) odzieży oraz pranie i drobne naprawy odzieży roboczej.
+                            Współpracujemy z polską najlepszą firmą w tej branży.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer id="kontakt" class="footer">
+            <section>
+                <article class="footer__article">
+                    <h3 class="footer__header">Kontakt</h3>
+                    <div class="footer__icons">
+                        <div>
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://www.facebook.com/profile.php?id=61555799191875">
+                                <img src="images/icons/icons8-facebook-50.png" alt="Facebook"
+                                    class="footer__iconImage" />
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:biuro@energiabhp.pl">
+                                <img src="images/icons/icons8-mail-50.png" alt="e-mail" class="footer__iconImage" />
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="footer__article footer__article--light">
+                    <div>
+                        <h3 class="footer__header footer__header--light">Godziny</h3>
+                        <p class="footer__paragraph">pon. - pt.</p>
+                        <p class="footer__paragraph">8:00 - 16:00</p>
+                    </div>
+                    <div class="footer__contactContainer">
+                        <p class="footer__paragraph">
+                            <a href="tel: +48.697(333)390" class="footer__link">
+                                +48 697 333 390
+                            </a>
+                        </p>
+                        <p class="footer__paragraph">
+                            <a href="mailto:biuroe@energiabhp.pl" class="footer__link">biuro@energiabhp.pl</a>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="footer__licenseBar">
+                Icons by <a rel="noreferrer noopener" target="_blank" href="https://icons8.com/"
+                    class="footer__licenseLink">Icons8</a>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>
