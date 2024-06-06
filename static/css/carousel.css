@@ -100,7 +100,23 @@
 }
 
 .carousel__itemHeader {
-    font-size: 19px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .carousel__itemHeader {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel__itemHeader {
+        font-size: 19px;
+    }
+}
+
+.carousel__paragraph {
+    text-align: justify;
 }
 
 .carousel__button {
