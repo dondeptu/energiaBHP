@@ -58,6 +58,10 @@
     }
 }
 
+.main__headerContainer--left {
+    justify-content: flex-start;
+}
+
 .main__header {
     font-weight: 700;
     font-size: 25px;
@@ -181,6 +185,10 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+.main__section--last {
+    margin-bottom: 40px;
 }
 
 .main__sectionHeader {
